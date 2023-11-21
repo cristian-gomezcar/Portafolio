@@ -1,0 +1,47 @@
+.main-container{
+  display: flex;
+  flex-direction: column;
+  position: relative
+}
+.presentation-container{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  height: 100vh;
+  margin-top: 50px;
+}
+.skills-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 0;
+  gap: 110px;
+}
+.projects-container{
+  margin: 30px;
+  margin-top: 0px;
+}
+.projects-title{
+color: #f17406;
+text-align: center;
+font-weight: bold;
+font-size: 2em;
+}
+@media screen and (max-width:760px) {
+  .presentation-container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .presentation-text{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+  }
+  
+}

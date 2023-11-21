@@ -1,0 +1,20 @@
+.img-container:nth-child(odd){
+    width: 115px;
+    animation: curva 5s infinite alternate;
+}
+.img-container:nth-child(even){
+    width: 115px;
+    animation: curva 5s infinite alternate-reverse;
+}
+@keyframes curva{
+    from{
+        transform:translateY(0px);
+        color: #f17406;
+ 
+    }
+    to{
+        transform: translateY(-30px);
+        color: #14213D;
+
+    }
+}

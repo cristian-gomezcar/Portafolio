@@ -1,0 +1,30 @@
+nav{
+    background-color: #fff;
+    box-shadow: 10px 0 20px rgb(0, 0, 0, .15);
+}
+.home a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: 550;
+    margin-left: 1em;
+}
+
+.home a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #f17406;
+    bottom: -6px;
+    transform: scale(0);
+    transform: .5s;
+}
+a:hover::after{
+    transform: scale(1);
+}
+a:hover{
+    color: #f17406;
+}

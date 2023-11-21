@@ -1,0 +1,48 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    margin-top: 90px;
+    margin: 30px;
+    margin-bottom: 0;
+    gap: 20px;
+}
+
+.about-card {
+    box-shadow: 10px 10px 5px 0px rgba(20, 33, 61, .5);
+    -webkit-box-shadow: 10px 10px 5px 0px (20, 33, 61, .5);
+    -moz-box-shadow: 10px 10px 5px 0px (20, 33, 61, .5);
+    border-bottom: 5px solid #1C6EA4;
+    text-align: center;
+}
+
+.about-img-container {
+    width: 100%;
+}
+
+.about-title {
+    border-bottom: 3px solid #f17406;
+    display: inline-block;
+}
+
+.about-description {
+    padding: 15px;
+    color: #f17406;
+}
+
+
+
+
+
+
+@media screen and (max-width:760px) {
+    .about {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0px;
+        margin: 0px;
+    }
+}
