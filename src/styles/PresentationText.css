@@ -45,3 +45,8 @@
     color: #14213D;
     text-align: center;
 }
+@media screen and (max-width:760px){
+  .text-name{
+    font-size: 2em; 
+  }
+}

@@ -18,7 +18,7 @@ export const Navbar = () => {
 
 	return (
 		<>
-   <nav className="bg-[#14213D] fixed w-full z-10">
+   <nav className="bg-[#14213D] fixed mt-0 z-50 right-0 w-full">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -91,19 +91,31 @@ export const Navbar = () => {
         </div>
       </div>
 
-      <div className={`${isOpen ? 'block' : 'hidden'} sm:hidden`}>
+      <div className={`${isOpen ? 'block' : 'hidden'} sm:hidden `}>
       <div className="px-2 pt-2 pb-3" >
           <a
-            href="#about"
+            onClick={() => handleScroll('home')}
+            className="transition-colors duration-500 hover:bg-gray-900 block px-3 py-2 rounded-md text-base font-medium text-white hover-text-gray-300 hover-bg-gray-700 focus:outline-none focus-text-white focus-bg-gray-700"
+          >
+            Home
+          </a>
+          <a
+            onClick={() => handleScroll('about')}
             className="transition-colors duration-500 hover:bg-gray-900 block px-3 py-2 rounded-md text-base font-medium text-white hover-text-gray-300 hover-bg-gray-700 focus:outline-none focus-text-white focus-bg-gray-700"
           >
             About
           </a>
           <a
-            href="/services"
-            className="block px-3 py-2 rounded-md text-base font-medium text-white hover-text-gray-300 hover-bg-gray-700 focus:outline-none focus-text-white focus-bg-gray-700"
+            onClick={() => handleScroll('skills')}
+            className="transition-colors duration-500 hover:bg-gray-900 block px-3 py-2 rounded-md text-base font-medium text-white hover-text-gray-300 hover-bg-gray-700 focus:outline-none focus-text-white focus-bg-gray-700"
           >
-            Services
+            Skills
+          </a>
+          <a
+            onClick={() => handleScroll('projects')}
+            className="transition-colors duration-500 hover:bg-gray-900 block px-3 py-2 rounded-md text-base font-medium text-white hover-text-gray-300 hover-bg-gray-700 focus:outline-none focus-text-white focus-bg-gray-700"
+          >
+            Projects
           </a>
 
         </div>

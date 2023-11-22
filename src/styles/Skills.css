@@ -157,3 +157,11 @@ height: 100%;
 .sql{
     color:#336791
 }
+
+@media screen and (max-width:760px) {
+  .sk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

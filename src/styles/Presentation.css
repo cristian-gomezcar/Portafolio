@@ -12,9 +12,10 @@ flex: 1;
         display: flex;
         justify-content: center;
         align-items:center;
+        margin-top: -160px;
     }
     .img-presentation{
-        width: 60%;
+        width: 90%;
         border-radius: 60%;
     }
 }

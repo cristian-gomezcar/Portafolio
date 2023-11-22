@@ -18,3 +18,33 @@
 
     }
 }
+@media screen and (max-width:760px) {
+    .galeriaSkills{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     width: 100%; 
+    }
+    .img-container:nth-child(odd){
+        width: 115px;
+        animation: curva 5s infinite alternate-reverse;
+    }
+    .img-container:nth-child(even){
+        width: 115px;
+        animation: curva 5s infinite alternate-reverse;
+    }
+    @keyframes curva{
+        from{
+            transform:translateY(0px);
+            color: #f17406;
+     
+        }
+        to{
+            transform: translateY(-30px);
+            color: #14213D;
+    
+        }
+    }
+}
+

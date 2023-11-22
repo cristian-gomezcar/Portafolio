@@ -30,18 +30,47 @@ font-weight: bold;
 font-size: 2em;
 }
 @media screen and (max-width:760px) {
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    
+  }
   .presentation-container{
     display: flex;
     align-items: center;
     justify-content:center;
     flex-wrap: wrap;
     flex-direction: column;
+    gap: 50px;
+    margin-top: 0px;
   }
   .presentation-text{
     display: flex;
     align-items: center;
     justify-content:center;
     flex-direction: column;
+  }
+  .projects-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+    height: 100%;
+  }
+  .skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
   }
   
 }

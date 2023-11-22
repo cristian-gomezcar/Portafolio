@@ -6,7 +6,7 @@ export const GalerySkills = ({ img }) => {
         <h2 className='text-[#14213D] font-bold text-3xl'>Basic</h2>
       </div>
 
-      <div className='flex justify-center items-center flex-row'>
+      <div className='galeriaSkills flex justify-center items-center flex-row'>
         {img && img.map((item, index) => (
           <div className='img-container' key={index}>
             <img src={item.img} alt={item.name} className='img-galeria' />

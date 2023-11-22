@@ -99,3 +99,16 @@
 .wrapper .email:hover .tooltip:before{
   background: brown;
 }
+
+
+@media screen and (max-width:760px){
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+}
+
+  

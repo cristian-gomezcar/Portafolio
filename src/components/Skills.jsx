@@ -4,8 +4,8 @@ import '../styles/Skills.css';
 
 export const Skills = () => {
   return (
-    <div>
-      <div className="flex flex-col items-center">
+    <div className="sk">
+      <div className="flex flex-wrap flex-col items-center">
         <h2 className="text-[#f17406] font-bold text-4xl">My Skills</h2>
         <div className="wrapper-skill flex-wrap">
           <div className="icon-skill javascript">
